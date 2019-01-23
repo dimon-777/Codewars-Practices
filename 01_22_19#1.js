@@ -21,10 +21,12 @@ function makeNegative(num) {
   }
 
  console.log(makeNegative(42), -42);
+ console.log(makeNegative(1)); // return -1
+console.log(makeNegative(-5)); // return -5
 
 
  // Best solution in one line of code:
- 
+
 //  function makeNegative(num) {
 //     return -Math.abs(num);
 //   }
