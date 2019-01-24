@@ -12,22 +12,18 @@
 // Find the unique string
 // Find The Unique
 
-// function findUniq(arr) {
-//     uniqueNumber = [];
-//     let sortedArr = arr.sort(function(a, b) {
-//      return a-b});
-//     for (i = 0; i < sortedArr.length; i++){
-//     if(sortedArr[i] !== sortedArr[i +1] && sortedArr[i] !== sortedArr[i -1]) {
-//        uniqueNumber.push(sortedArr[i]);
-//         }
-//     }
-//      return uniqueNumber[0];
-    
-// }
 function findUniq(arr) {
-    arr.sort((a,b)=>a-b);
-    return arr[0]==arr[1]?arr.pop():arr[0]
-  }
+    uniqueNumber = [];
+    let sortedArr = arr.sort(function(a, b) {
+     return a-b});
+    for (i = 0; i < sortedArr.length; i++){
+    if(sortedArr[i] !== sortedArr[i +1] && sortedArr[i] !== sortedArr[i -1]) {
+       uniqueNumber.push(sortedArr[i]);
+        }
+    }
+     return uniqueNumber[0];
+    
+}
 
 
 console.log(findUniq([ 0, 1, 0 ]));
@@ -36,4 +32,7 @@ console.log(findUniq([ 3, 10, 3, 3, 3 ]));
 
  // Best solution of code:
 
- 
+//  function findUniq(arr) {
+//     arr.sort((a,b)=>a-b);
+//     return arr[0]==arr[1]?arr.pop():arr[0]
+//   }
