@@ -28,9 +28,9 @@
 var isSquare = function(n) {
     let val = Math.floor(Math.sqrt(n));
     if (val * val == n){
-    return true;
+      return true;
     }else {
-        return false;
+      return false;
     }
 }
 
