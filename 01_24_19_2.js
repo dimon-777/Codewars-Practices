@@ -25,6 +25,7 @@
 // isSquare(26) returns  false
 
 
+<<<<<<< HEAD
 // var isSquare = function(n) {
 //     let val = Math.floor(Math.sqrt(n));
 //     if (val * val == n){
@@ -57,6 +58,14 @@ for (let i = 1; i <= 100; i++) {
         console.log("FizzBuzz");
     }else {
         console.log(i);
+=======
+var isSquare = function(n) {
+    let val = Math.floor(Math.sqrt(n));
+    if (val * val == n){
+      return true;
+    }else {
+      return false;
+>>>>>>> d49db7197d9e9d34b589400b31e401668bcef59f
     }
 
 }
