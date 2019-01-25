@@ -25,25 +25,38 @@
 // isSquare(26) returns  false
 
 
-var isSquare = function(n) {
-    let val = Math.floor(Math.sqrt(n));
-    if (val * val == n){
-    return true;
+// var isSquare = function(n) {
+//     let val = Math.floor(Math.sqrt(n));
+//     if (val * val == n){
+//     return true;
+//     }else {
+//         return false;
+//     }
+// }
+
+
+// console.log(isSquare(-1))
+// console.log(isSquare( 0))
+// console.log(isSquare( 3))
+// console.log(isSquare( 4))
+// console.log(isSquare(25))
+// console.log(isSquare(26))
+
+// // Best solution of code:
+
+// //    function isSquare(n) {
+// //     return Math.sqrt(n) % 1 === 0;
+// //   }
+
+for (let i = 1; i <= 100; i++) {
+    if (i % 3 == 0) {
+        console.log("Fizz");
+    }else if (i % 5 == 0) {
+        console.log("Buzz");
+    }else if (i % 3 == 0 && i % 5 == 0) {
+        console.log("FizzBuzz");
     }else {
-        return false;
+        console.log(i);
     }
+
 }
-
-
-console.log(isSquare(-1))
-console.log(isSquare( 0))
-console.log(isSquare( 3))
-console.log(isSquare( 4))
-console.log(isSquare(25))
-console.log(isSquare(26))
-
-// Best solution of code:
-
-//    function isSquare(n) {
-//     return Math.sqrt(n) % 1 === 0;
-//   }
