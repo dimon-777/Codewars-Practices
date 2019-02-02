@@ -68,8 +68,6 @@ function convertFrac(lst) {
     }).join("");
 }
 
-//let lst = [ [1, 2], [1, 3], [1, 4] ]
-//convertFrac(lst), "(6,12)(4,12)(3,12)"
 
  var lst = [ [1, 2], [1, 3], [1, 4] ]
  console.log(convertFrac(lst), "(6,12)(4,12)(3,12)")
