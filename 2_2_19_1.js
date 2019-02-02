@@ -87,3 +87,46 @@ console.log(game.play(6, 2), "Player 2 is on square 31", "Should return: 'Player
 console.log(game.play(1, 1), "Player 1 is on square 25", "Should return: 'Player 1 is on square 25'")
 
   // Best solution of code:
+
+//   function SnakesLadders() {
+//     this[0] = 0;
+//     this[1] = 0;
+//     this.turn = 0;
+//     this.road = {
+//         2: 38,
+//         7: 14,
+//         8: 31,
+//         15: 26,
+//         16: 6,
+//         21: 42,
+//         28: 84,
+//         36: 44,
+//         46: 25,
+//         49: 11,
+//         51: 67,
+//         62: 19,
+//         64: 60,
+//         71: 91,
+//         74: 53,
+//         78: 98,
+//         87: 94,
+//         89: 68,
+//         92: 88,
+//         95: 75,
+//         99: 80
+//     };
+// };
+
+// SnakesLadders.prototype.play = function(d1, d2) {
+//     if (this.go) return 'Game over!';
+//     this[this.turn] += d1 + d2;
+//     this[this.turn] -= Math.max(2*this[this.turn] - 200, 0);
+//     this[this.turn] = this.road[this[this.turn]] || this[this.turn];
+//     let s = `Player ${this.turn+1} is on square ${this[this.turn]}`;
+//     if (this[this.turn] > 99) {
+//         this.go = true;
+//         s = `Player ${this.turn+1} Wins!`;
+//     }
+//     if (d1 !== d2) this.turn = ++this.turn % 2;
+//     return s;
+// }
